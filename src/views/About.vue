@@ -1,9 +1,5 @@
 <template>
-<div class="home">
-    <p>Estas en About</p>
-</div>
+  <div class="about">
+    <h1>This is an about page</h1>
+  </div>
 </template>
-
-<script>
-
-</script>

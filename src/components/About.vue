@@ -1,30 +1,38 @@
 <template>
   <div id="about" class="container mx-auto">
     <div class="my-10">
-      <h2 class="text-3xl text-left">About me</h2>
-      <p class="text-left"
+      <h2 class="text-3xl my-4">About me</h2>
+      <p
+        class="text-left p-5 break-words"
         style="font-family: 'Times New Roman', sans-serif; font-size: 1.667rem"
       >
-        Vivo en Lima y tengo 22 años, actualmente trabajo como consultor relacionada al ecosistema de la nube de SAP o  (SCP), he desarrollado soluciones con multiples herramientas, aplicaciones web, chatbots y automatización de procesos con RPA.
-        <br/>
-        Actualmente me encuentro estudiante las tecnologias de vuejs y Java.
+        Actualmente vivo en Lima, tengo 22 años, trabajo como consultor
+        relacionada al ecosistema de la nube de SAP o (SCP), he desarrollado
+        soluciones con multiples herramientas, aplicaciones web, chatbots y
+        automatización de procesos con RPA.
+        <br />
+        Actualmente me encuentro estudiante las tecnologias de vueJS y Java.
       </p>
+      <button
+        class="border-blue-900 p-5 bg-blue-300 text-white bold-700 rounded-full hover:bg-blue-400 focus:outline-none focus:bg-blue-500"
+      >
+        Descargar CV
+      </button>
     </div>
     <div class="skill-soft">
       <div class="m-10">
-
-      <h2 class="text-5xl ">Skills</h2>
+        <h2 class="text-5xl">Skills</h2>
       </div>
-    <div class="mt-5">
-
-      <div class="grid grid-cols-3 gap-2">
-        <Skill
-          v-for="(stack, i) in stacks"
-          v-bind:key="i"
-          v-bind:stack="stack"
-        />
+      <div class="mt-5">
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-2">
+          <Skill
+            class="px-5"
+            v-for="(stack, i) in stacks"
+            v-bind:key="i"
+            v-bind:stack="stack"
+          />
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </template>
@@ -39,22 +47,39 @@ export default {
   data() {
     return {
       stacks: [
-        { tecnologia: "JS", porcentaje: "80%" },
-        { tecnologia: "HTML5", porcentaje: "80%" },
-        { tecnologia: "CSS3", porcentaje: "80%" },
-        { tecnologia: "NODEJS", porcentaje: "60%" },
-       
-        { tecnologia: "EXPRESS", porcentaje: "60%" },
-        { tecnologia: "SAPUI5", porcentaje: "70%" },
-        { tecnologia: "SQL", porcentaje: "50%" },
-        { tecnologia: "HANADB", porcentaje: "50%" },
-        { tecnologia: "RPA", porcentaje: "50%" },
-        { tecnologia: "UIPATH", porcentaje: "50%" },
-        { tecnologia: "IRPA", porcentaje: "50%" },
-        { tecnologia: "DIALOGFLOW", porcentaje: "60%" },
-        { tecnologia: "CAI", porcentaje: "60%" },
-         { tecnologia: "JAVA", porcentaje: "40%" },
-        { tecnologia: "VUE", porcentaje: "40%" }
+        {
+          name: "LENGUAGES",
+          tecnologias: [
+            { name: "JS", porcentaje: "80%" },
+            { name: "HTML5", porcentaje: "80%" },
+            { name: "Java", porcentaje: "40%" },
+          ],
+        },
+         {
+          name: "FRAMEWORKS",
+          tecnologias: [
+            { name: "SAPUI5", porcentaje: "80%" },
+            { name: "nodejs", porcentaje: "70%" },
+            { name: "express", porcentaje: "70%" },
+            { name: "vueJS", porcentaje: "40%" },
+          ],
+        },
+         {
+          name: "OTHERS TOOLS",
+          tecnologias: [
+            { name: "API REST", porcentaje: "80%" },
+            { name: "CHATBOT", porcentaje: "80%" },
+            { name: "SAP CAI", porcentaje: "80%" },
+            { name: "DIALOGFLOW", porcentaje: "70%" },
+            { name: "CSS3", porcentaje: "70%" },
+            { name: "Arquitectura Hexagonal", porcentaje: "60%" },
+            { name: "JWT", porcentaje: "60%" },
+            { name: "SQL", porcentaje: "50%" },
+            { name: "UIPATH", porcentaje: "50%" },
+            { name: "HANADB", porcentaje: "40%" },
+            { name: "iRPA", porcentaje: "40%" }
+          ],
+        },
       ],
     };
   },

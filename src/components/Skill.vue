@@ -1,7 +1,7 @@
 <template>
       <div >
         <div>
-          <h3 class="text-left">{{stack.name}}</h3>
+          <h3 class="text-center my-3">{{stack.name}}</h3>
         </div>
       <div class="tool flex justify-between w-full" v-for="(s,i) in stack.tecnologias" :key="i">
         <div class="text-left  w-1/3">

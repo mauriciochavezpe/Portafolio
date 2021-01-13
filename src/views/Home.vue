@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    
     <Header/>
-    <About/>
+     <About/>
+    <Habilidades/>
+   <Experiencia/>
     <Servicios/>
     <Portafolio/>
-    <Footer/>
+    <Footer/> 
   </div>
 </template>
 
@@ -15,8 +16,10 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Header from '@/components/Header.vue'
 import About from '@/components/About.vue'
+import Habilidades from '@/components/Habilidades.vue'
+import Experiencia from '@/components/Experiencia.vue'
 import Servicios from '@/components/Servicios.vue'
-import Portafolio from '../components/portafolio.vue'
+import Portafolio from '@/components/Portafolio.vue'
 import Footer from '@/components/Footer.vue'
  
 export default {
@@ -25,9 +28,11 @@ export default {
     // HelloWorld,
     Header ,
     About,
-    Footer,
+    Experiencia,
+    Habilidades,
     Servicios,
-    Portafolio
+    Portafolio,
+    Footer,
   }
 }
 

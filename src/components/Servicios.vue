@@ -1,10 +1,10 @@
 <template>
-  <section id="servicios" class="container">
+  <section id="servicios" class="container mx-auto">
     <div class="m-10">
       <h2 class="text-5xl">Servicios</h2>
     </div>
     <div class="grid grid-cols-1 xl:grid-cols-3">
-        <card-service class="xl:mx-5" v-for="(servicio,i) in servicios" :key="i" v-bind:servicio="servicio"/>
+        <card-service  v-for="(servicio,i) in servicios" :key="i" v-bind:servicio="servicio"/>
     </div>
   </section>
 </template>

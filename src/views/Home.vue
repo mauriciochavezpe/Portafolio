@@ -8,6 +8,7 @@
     <Servicios/>
     <Portafolio/>
     <Footer/> 
+    <!-- <Chatbot/> -->
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import Experiencia from '@/components/Experiencia.vue'
 import Servicios from '@/components/Servicios.vue'
 import Portafolio from '@/components/Portafolio.vue'
 import Footer from '@/components/Footer.vue'
+// import Chatbot from '@/components/Chatbot.vue'
  
 export default {
   name: 'Home',
@@ -33,6 +35,7 @@ export default {
     Servicios,
     Portafolio,
     Footer,
+    // Chatbot
   }
 }
 

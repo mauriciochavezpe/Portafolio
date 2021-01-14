@@ -29,8 +29,7 @@ import ExperienciaEmpresa from "./Experiencia-empresa.vue";
 // import ExperienciaEmpresa from "./Experiencia-empresa.vue";
 export default {
   components: { ExperienciaEmpresa },
-  // components: { ExperienciaEmpresa },
-  // name: "Experiencia",
+  
   data() {
     return {
       empresas: [
